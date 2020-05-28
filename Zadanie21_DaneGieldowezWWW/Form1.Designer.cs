@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series10 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series11 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series12 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.textBox_CompanyTag = new System.Windows.Forms.TextBox();
             this.date_Start = new System.Windows.Forms.DateTimePicker();
             this.date_Stop = new System.Windows.Forms.DateTimePicker();
@@ -127,6 +127,9 @@
             // 
             // cartesianChart
             // 
+            this.cartesianChart.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.cartesianChart.Location = new System.Drawing.Point(12, 296);
             this.cartesianChart.Name = "cartesianChart";
             this.cartesianChart.Size = new System.Drawing.Size(518, 227);
@@ -135,33 +138,35 @@
             // 
             // dataChart
             // 
-            chartArea4.Name = "ChartArea1";
-            this.dataChart.ChartAreas.Add(chartArea4);
-            legend4.Name = "Legend1";
-            this.dataChart.Legends.Add(legend4);
+            this.dataChart.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            chartArea1.Name = "ChartArea1";
+            this.dataChart.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.dataChart.Legends.Add(legend1);
             this.dataChart.Location = new System.Drawing.Point(536, 314);
             this.dataChart.Name = "dataChart";
-            series10.BackImageTransparentColor = System.Drawing.Color.White;
-            series10.ChartArea = "ChartArea1";
-            series10.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            series10.Legend = "Legend1";
-            series10.Name = "Open";
-            series11.ChartArea = "ChartArea1";
-            series11.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series11.Legend = "Legend1";
-            series11.Name = "Close";
-            series12.BackSecondaryColor = System.Drawing.Color.Red;
-            series12.BorderColor = System.Drawing.Color.Lime;
-            series12.ChartArea = "ChartArea1";
-            series12.Color = System.Drawing.Color.Fuchsia;
-            series12.LabelBorderWidth = 4;
-            series12.Legend = "Legend1";
-            series12.Name = "Volume";
-            series12.YAxisType = System.Windows.Forms.DataVisualization.Charting.AxisType.Secondary;
-            this.dataChart.Series.Add(series10);
-            this.dataChart.Series.Add(series11);
-            this.dataChart.Series.Add(series12);
+            series1.BackImageTransparentColor = System.Drawing.Color.White;
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            series1.Legend = "Legend1";
+            series1.Name = "Open";
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series2.Legend = "Legend1";
+            series2.Name = "Close";
+            series3.BackSecondaryColor = System.Drawing.Color.Red;
+            series3.BorderColor = System.Drawing.Color.Lime;
+            series3.ChartArea = "ChartArea1";
+            series3.Color = System.Drawing.Color.Fuchsia;
+            series3.LabelBorderWidth = 4;
+            series3.Legend = "Legend1";
+            series3.Name = "Volume";
+            series3.YAxisType = System.Windows.Forms.DataVisualization.Charting.AxisType.Secondary;
+            this.dataChart.Series.Add(series1);
+            this.dataChart.Series.Add(series2);
+            this.dataChart.Series.Add(series3);
             this.dataChart.Size = new System.Drawing.Size(499, 209);
             this.dataChart.TabIndex = 10;
             this.dataChart.Text = "chart1";
